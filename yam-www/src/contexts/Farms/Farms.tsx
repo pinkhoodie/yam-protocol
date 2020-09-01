@@ -16,7 +16,7 @@ const NAME_FOR_POOL: { [key: string]: string } = {
   yfi_pool: 'YFI Farm',
   eth_pool: 'Weth Homestead',
   ampl_pool: 'Ample Soils',
-  ycrv_pool: 'Eternal Lands',
+  ycrv_pool: 'Yup Fire',
   comp_pool: 'Compounding Hills',
   link_pool: 'Marine Gardens',
   lend_pool: 'Aave Agriculture',
@@ -33,7 +33,7 @@ const ICON_FOR_POOL: { [key: string]: string } = {
   lend_pool: '🏕️',
   snx_pool: '⚔️',
   mkr_pool: '🐮',
-  ycrv_pool: '🌈',
+  ycrv_pool: '🔥',
 }
 
 const SORT_FOR_POOL: { [key: string]: number } = {
@@ -52,7 +52,7 @@ const Farms: React.FC = ({ children }) => {
 
   const [farms, setFarms] = useState<Farm[]>([])
   const [unharvested, setUnharvested] = useState(0)
-  
+
   const yam = useYam()
   const { account } = useWallet()
 
@@ -70,7 +70,7 @@ const Farms: React.FC = ({ children }) => {
       } else if (tokenKey === 'ampl') {
         tokenKey = 'ampl_eth_uni_lp'
       } else if (tokenKey === 'ycrv') {
-        tokenKey = 'ycrv_yam_uni_lp'
+        tokenKey = 'ycrv_yup_uni_lp'
       }
 
       const method = pool.methods[tokenKey]
@@ -78,7 +78,7 @@ const Farms: React.FC = ({ children }) => {
         let tokenAddress = ''
         if (method) {
           tokenAddress = await method().call()
-        } else if (tokenKey === 'ycrv_yam_uni_lp') {
+        } else if (tokenKey === 'ycrv_yup_uni_lp') {
           tokenAddress = '0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8'
         }
         farmsArr.push({
@@ -119,7 +119,7 @@ const Farms: React.FC = ({ children }) => {
       fetchUnharvested()
     }
   }, [account, farms, setUnharvested, yam])
-  
+
   return (
     <Context.Provider value={{
       farms,

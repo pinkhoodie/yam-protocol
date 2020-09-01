@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import farmer from '../../assets/img/farmer.png'
+import farmer from '../../assets/img/fire.png'
 
 import Button from '../../components/Button'
 import Container from '../../components/Container'

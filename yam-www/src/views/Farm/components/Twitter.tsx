@@ -82,16 +82,18 @@ const Stake: React.FC<StakeProps> = ({
       <CardContent>
         <StyledCardContentInner>
           <StyledCardHeader>
-            <CardIcon>💥</CardIcon>
-            <Value value={getDisplayBalance(stakedBalance)} />
-            <Label text={`${tokenName} Staked`} />
+            <CardIcon>🙍</CardIcon>
+            <StyledCardHeaderContent>
+              <Value value="Yupster" />
+              <Label text={`@yupster`} />
+            </StyledCardHeaderContent>
           </StyledCardHeader>
           <StyledCardActions>
             {!allowance.toNumber() ? (
               <Button
                 disabled={requestedApproval}
                 onClick={handleApprove}
-                text={`Approve ${tokenName}`}
+                text={`Connect Twitter`}
               />
             ) : (
               <>
@@ -114,12 +116,18 @@ const Stake: React.FC<StakeProps> = ({
 const StyledCardHeader = styled.div`
   align-items: center;
   display: flex;
+  flex-direction: row;
+`
+const StyledCardHeaderContent = styled.div`
+  align-items: start;
+  display: flex;
   flex-direction: column;
+  margin: 0 auto ${props => props.theme.spacing[3]}px;
 `
 const StyledCardActions = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: ${props => props.theme.spacing[6]}px;
+  margin-top: ${props => props.theme.spacing[1]}px;
   width: 100%;
 `
 

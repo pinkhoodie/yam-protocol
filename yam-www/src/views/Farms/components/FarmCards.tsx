@@ -80,7 +80,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
   }
 
   useEffect(() => {
-    if (farm && farm.id === 'ycrv_yam_uni_lp') {
+    if (farm && farm.id === 'ycrv_yup_uni_lp') {
       getStartTime()
     }
   }, [farm, getStartTime])
@@ -98,7 +98,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
   const poolActive = startTime * 1000 - Date.now() <= 0
   return (
     <StyledCardWrapper>
-      {farm.id === 'ycrv_yam_uni_lp' && (
+      {farm.id === 'ycrv_yup_uni_lp' && (
         <StyledCardAccent />
       )}
       <Card>

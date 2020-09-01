@@ -42,23 +42,23 @@ const Button: React.FC<ButtonProps> = ({
   let fontSize: number
   switch (size) {
     case 'sm':
-      boxShadow = `4px 4px 8px ${color.grey[300]},
-        -8px -8px 16px ${color.grey[100]}FF;`
+      boxShadow = `4px 4px 8px ${color.grey[300]}dd,
+        -8px -8px 16px ${color.grey[100]}dd;`
       buttonPadding = spacing[3]
       buttonSize = 36
       fontSize = 14
       break
     case 'lg':
-      boxShadow = `6px 6px 12px ${color.grey[300]},
-        -12px -12px 24px ${color.grey[100]}ff;`
+      boxShadow = `6px 6px 12px ${color.grey[300]}dd,
+        -12px -12px 24px ${color.grey[100]}dd;`
       buttonPadding = spacing[4]
       buttonSize = 72
       fontSize = 16
       break
     case 'md':
     default:
-      boxShadow = `6px 6px 12px ${color.grey[300]},
-        -12px -12px 24px -2px ${color.grey[100]}ff;`
+      boxShadow = `6px 6px 12px ${color.grey[300]}dd,
+        -12px -12px 24px -2px ${color.grey[100]}dd;`
       buttonPadding = spacing[4]
       buttonSize = 56
       fontSize = 16
@@ -108,14 +108,16 @@ const StyledButton = styled.button<StyledButtonProps>`
   color: ${props => !props.disabled ? props.color : `${props.color}55`};
   cursor: pointer;
   display: flex;
+  font-family: Rubik, sans-serif;
   font-size: ${props => props.fontSize}px;
-  font-weight: 700;
+  font-weight: 400;
   height: ${props => props.size}px;
   justify-content: center;
   outline: none;
   padding-left: ${props => props.padding}px;
   padding-right: ${props => props.padding}px;
   pointer-events: ${props => !props.disabled ? undefined : 'none'};
+  text-transform: uppercase;
   width: 100%;
   &:hover {
     background-color: ${props => props.theme.color.grey[100]};

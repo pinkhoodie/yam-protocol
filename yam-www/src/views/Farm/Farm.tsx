@@ -14,6 +14,7 @@ import useRedeem from '../../hooks/useRedeem'
 import { getContract } from '../../utils/erc20'
 
 import Harvest from './components/Harvest'
+import Twitter from './components/Twitter'
 import Stake from './components/Stake'
 
 const Farm: React.FC = () => {
@@ -63,6 +64,16 @@ const Farm: React.FC = () => {
       <StyledFarm>
         <StyledCardsWrapper>
           <StyledCardWrapper>
+            <Twitter
+              poolContract={contract}
+              tokenContract={tokenContract}
+              tokenName={depositToken.toUpperCase()}
+            />
+          </StyledCardWrapper>
+        </StyledCardsWrapper>
+        <Spacer size="lg" />
+        <StyledCardsWrapper>
+          <StyledCardWrapper>
             <Harvest poolContract={contract} />
           </StyledCardWrapper>
           <Spacer />
@@ -78,7 +89,7 @@ const Farm: React.FC = () => {
         <div>
           <Button
             onClick={onRedeem}
-            text="Harvest & Unstake"
+            text="Redeem & Unstake"
           />
         </div>
         <Spacer size="lg" />

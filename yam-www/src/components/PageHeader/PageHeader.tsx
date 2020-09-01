@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Container from '../Container'
+import Spacer from '../Spacer'
 
 interface PageHeaderProps {
   icon: React.ReactNode,
@@ -14,8 +15,11 @@ const PageHeader: React.FC<PageHeaderProps> = ({ icon, subtitle, title }) => {
     <Container size="sm">
     <StyledPageHeader>
       <StyledIcon>{icon}</StyledIcon>
+      <Spacer />
+      <div style={{display:"flex",flexDirection:"column"}}>
       <StyledTitle>{title}</StyledTitle>
       <StyledSubtitle>{subtitle}</StyledSubtitle>
+      </div>
     </StyledPageHeader>
     </Container>
   )
@@ -25,7 +29,7 @@ const StyledPageHeader = styled.div`
   align-items: center;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-bottom: ${props => props.theme.spacing[6]}px;
   padding-top: ${props => props.theme.spacing[6]}px;
   margin: 0 auto;
