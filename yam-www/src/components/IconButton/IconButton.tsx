@@ -34,7 +34,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   color: ${props => !props.disabled ? props.theme.color.primary.main : props.theme.color.grey[400]};
   cursor: pointer;
   display: flex;
-  font-weight: 700;
+  font-weight: 500;
   height: 56px;
   justify-content: center;
   letter-spacing: 1px;

@@ -184,7 +184,7 @@ const StyledCardWrapper = styled.div`
 const StyledTitle = styled.h4`
   color: ${props => props.theme.color.grey[600]};
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   margin: ${props => props.theme.spacing[2]}px 0 0;
   padding: 0;
 `

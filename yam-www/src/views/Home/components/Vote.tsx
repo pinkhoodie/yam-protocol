@@ -193,7 +193,7 @@ const StyledDelegatedCount = styled.div`
   text-align: center;
   font-size: 24px;
   color: ${props => props.theme.color.grey[600]};
-  font-weight: 700;
+  font-weight: 500;
   margin: 0 auto;
 `
 
@@ -203,7 +203,7 @@ const StyledUndelegateCountdown = styled.div`
 
 const StyledThankYou = styled.div`
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   color: ${props => props.theme.color.secondary.main};
   text-align: center;
   padding: 0 48px;
@@ -218,7 +218,7 @@ const StyledDenominator = styled.div`
 const StyledCountdown = styled.div`
   color: ${props => props.theme.color.primary.main};
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
 `
 
 interface StyledTitleProps {
@@ -226,7 +226,7 @@ interface StyledTitleProps {
 }
 const StyledTitle = styled.div<StyledTitleProps>`
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 32px;
 `
 
@@ -277,7 +277,7 @@ const StyledCheckpointText = styled.div<StyledCheckpointProps>`
   position: absolute;
   left: ${props => props.left}px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   white-space: nowrap;
   text-align: center;
 `
@@ -305,7 +305,7 @@ const StyledMeterInner = styled.div<StyledMeterInnerProps>`
 const StyledLink = styled.a`
   color: ${props => props.theme.color.grey[600]};
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
 `
 
 export default Vote

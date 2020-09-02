@@ -63,7 +63,7 @@ const StyledLink = styled(NavLink)`
   box-sizing: border-box;
   color: ${props => props.theme.color.grey[400]};
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   padding: ${props => props.theme.spacing[3]}px ${props => props.theme.spacing[4]}px;
   text-align: center;
   text-decoration: none;

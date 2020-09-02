@@ -16,7 +16,7 @@ const NAME_FOR_POOL: { [key: string]: string } = {
   yfi_pool: 'YFI Farm',
   eth_pool: 'Weth Homestead',
   ampl_pool: 'Ample Soils',
-  ycrv_pool: 'Yup Fire',
+  ycrv_pool: 'Yup Party',
   comp_pool: 'Compounding Hills',
   link_pool: 'Marine Gardens',
   lend_pool: 'Aave Agriculture',
@@ -33,7 +33,7 @@ const ICON_FOR_POOL: { [key: string]: string } = {
   lend_pool: '🏕️',
   snx_pool: '⚔️',
   mkr_pool: '🐮',
-  ycrv_pool: '🔥',
+  ycrv_pool: '🎉',
 }
 
 const SORT_FOR_POOL: { [key: string]: number } = {

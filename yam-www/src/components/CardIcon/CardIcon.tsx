@@ -18,6 +18,7 @@ const StyledCardIcon = styled.div`
   width: 100px;
   border-radius: 40px;
   align-items: center;
+  text-shadow: 6px 6px 12px ${props => props.theme.color.grey[100]}, -6px -6px 12px ${props => props.theme.color.grey[300]}ee;
   display: flex;
   justify-content: center;
   margin: 0 auto ${props => props.theme.spacing[3]}px;

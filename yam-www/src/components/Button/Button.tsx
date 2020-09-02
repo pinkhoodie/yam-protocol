@@ -42,26 +42,26 @@ const Button: React.FC<ButtonProps> = ({
   let fontSize: number
   switch (size) {
     case 'sm':
-      boxShadow = `4px 4px 8px ${color.grey[300]}dd,
-        -8px -8px 16px ${color.grey[100]}dd;`
+      boxShadow = `4px 4px 8px ${color.grey[300]}cc,
+        -8px -8px 16px ${color.grey[100]}cc;`
       buttonPadding = spacing[3]
       buttonSize = 36
-      fontSize = 14
+      fontSize = 12
       break
     case 'lg':
-      boxShadow = `6px 6px 12px ${color.grey[300]}dd,
-        -12px -12px 24px ${color.grey[100]}dd;`
+      boxShadow = `6px 6px 12px ${color.grey[300]}cc,
+        -12px -12px 24px ${color.grey[100]}cc;`
       buttonPadding = spacing[4]
       buttonSize = 72
-      fontSize = 16
+      fontSize = 14
       break
     case 'md':
     default:
-      boxShadow = `6px 6px 12px ${color.grey[300]}dd,
-        -12px -12px 24px -2px ${color.grey[100]}dd;`
+      boxShadow = `6px 6px 12px ${color.grey[300]}cc,
+        -12px -12px 24px -2px ${color.grey[100]}cc;`
       buttonPadding = spacing[4]
       buttonSize = 56
-      fontSize = 16
+      fontSize = 14
   }
 
   const ButtonChild = useMemo(() => {
@@ -103,7 +103,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   align-items: center;
   background-color: ${props => props.theme.color.grey[200]};
   border: 0;
-  border-radius: 12px;
+  border-radius: 6px;
   box-shadow: ${props => props.boxShadow};
   color: ${props => !props.disabled ? props.color : `${props.color}55`};
   cursor: pointer;
@@ -119,6 +119,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   pointer-events: ${props => !props.disabled ? undefined : 'none'};
   text-transform: uppercase;
   width: 100%;
+  text-spacing: calc(${props => props.theme.spacing[4]}px * 10);
   &:hover {
     background-color: ${props => props.theme.color.grey[100]};
   }

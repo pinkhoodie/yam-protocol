@@ -165,7 +165,7 @@ const StyledCountdownWrapper = styled.div`
 const StyledCountdown = styled.div`
   color: ${props => props.theme.color.primary.main};
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 500;
 `
 
 const StyledMigrateWrapper = styled.div`

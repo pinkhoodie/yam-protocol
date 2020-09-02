@@ -82,7 +82,7 @@ const Stake: React.FC<StakeProps> = ({
       <CardContent>
         <StyledCardContentInner>
           <StyledCardHeader>
-            <CardIcon>🙍</CardIcon>
+            <CardIcon>🕺</CardIcon>
             <StyledCardHeaderContent>
               <Value value="Yupster" />
               <Label text={`@yupster`} />
@@ -123,6 +123,7 @@ const StyledCardHeaderContent = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto ${props => props.theme.spacing[3]}px;
+  text-shadow: 3px 3px 12px ${props => props.theme.color.grey[100]}, -3px -3px 6px ${props => props.theme.color.grey[300]}cc;
 `
 const StyledCardActions = styled.div`
   display: flex;

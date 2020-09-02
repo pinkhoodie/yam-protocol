@@ -41,14 +41,20 @@ const StyledIcon = styled.div`
   line-height: 96px;
   text-align: center;
   width: 96px;
+  text-shadow: -6px -6px 12px ${props => props.theme.color.grey[100]}, 6px 6px 12px ${props => props.theme.color.grey[300]}cc;
 `
 
 const StyledTitle = styled.h1`
   color: ${props => props.theme.color.grey[600]};
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 500;
+  font-family: Bungee Shade;
+  background: -webkit-linear-gradient(#e27faa, #9626ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0;
   padding: 0;
+  text-shadow: -6px -6px 12px ${props => props.theme.color.grey[100]}aa, 6px 6px 12px ${props => props.theme.color.grey[300]}99;
 `
 
 const StyledSubtitle = styled.h3`
@@ -58,6 +64,7 @@ const StyledSubtitle = styled.h3`
   margin: 0;
   padding: 0;
   text-align: center;
+  text-shadow: -6px -6px 12px ${props => props.theme.color.grey[100]}, 6px 6px 12px ${props => props.theme.color.grey[300]}cc;
 `
 
 export default PageHeader

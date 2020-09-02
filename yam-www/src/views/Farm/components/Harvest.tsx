@@ -29,7 +29,7 @@ const Harvest: React.FC<HarvestProps> = ({ poolContract }) => {
       <CardContent>
         <StyledCardContentInner>
           <StyledCardHeader>
-            <CardIcon>🚒</CardIcon>
+            <CardIcon>👛</CardIcon>
             <Value value={getDisplayBalance(earnings)} />
             <Label text="YUPs earned" />
           </StyledCardHeader>
@@ -47,6 +47,7 @@ const StyledCardHeader = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+  text-shadow: 3px 3px 12px ${props => props.theme.color.grey[100]}, -3px -3px 6px ${props => props.theme.color.grey[300]}cc;
 `
 const StyledCardActions = styled.div`
   display: flex;

@@ -64,7 +64,7 @@ const StyledCountdown = styled.div`
 const StyledCountdownText = styled.span`
   color: ${props => props.theme.color.grey[600]};
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 500;
 `
 const StyledCountdownWrapper = styled.div`
   display: flex;
