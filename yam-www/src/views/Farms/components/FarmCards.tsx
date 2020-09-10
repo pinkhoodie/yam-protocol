@@ -94,7 +94,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
       fetchEarned()
     }
   }, [yam, contract, account, setHarvestable])
-  
+
   const poolActive = startTime * 1000 - Date.now() <= 0
   return (
     <StyledCardWrapper>
@@ -182,7 +182,7 @@ const StyledCardWrapper = styled.div`
 `
 
 const StyledTitle = styled.h4`
-  color: ${props => props.theme.color.grey[600]};
+  color: ${props => props.theme.color.grey[800]};
   font-size: 24px;
   font-weight: 500;
   margin: ${props => props.theme.spacing[2]}px 0 0;

@@ -121,7 +121,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   width: 100%;
   text-spacing: calc(${props => props.theme.spacing[4]}px * 10);
   &:hover {
-    background-color: ${props => props.theme.color.grey[100]};
+    box-shadow: 0px 0px 20px #00eab7;
   }
 `
 

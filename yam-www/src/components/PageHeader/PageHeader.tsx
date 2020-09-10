@@ -45,16 +45,15 @@ const StyledIcon = styled.div`
 `
 
 const StyledTitle = styled.h1`
-  color: ${props => props.theme.color.grey[600]};
-  font-size: 36px;
+  color: ${props => props.theme.color.grey[700]};
+  font-size: 48px;
   font-weight: 500;
-  font-family: Bungee Shade;
+  font-family: Bungee;
   background: -webkit-linear-gradient(#e27faa, #9626ad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
   padding: 0;
-  text-shadow: -6px -6px 12px ${props => props.theme.color.grey[100]}aa, 6px 6px 12px ${props => props.theme.color.grey[300]}99;
 `
 
 const StyledSubtitle = styled.h3`
