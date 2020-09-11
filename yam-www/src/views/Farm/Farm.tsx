@@ -17,6 +17,9 @@ import Harvest from './components/Harvest'
 import Twitter from './components/Twitter'
 import Stake from './components/Stake'
 
+import Iframe from 'react-iframe'
+
+
 const Farm: React.FC = () => {
   const { farmId } = useParams()
   const {
@@ -62,6 +65,16 @@ const Farm: React.FC = () => {
         title={name}
       />
       <StyledFarm>
+        <StyledCardsWrapper>
+          <StyledCardWrapper>
+          <Iframe url="/v4.final.html"
+            width="450px"
+            height="450px"
+            id="myId"
+            className="myClassname"
+            position="relative"/>
+          </StyledCardWrapper>
+        </StyledCardsWrapper>
         <StyledCardsWrapper>
           <StyledCardWrapper>
             <Twitter
